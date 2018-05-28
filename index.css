@@ -574,6 +574,12 @@ nav ul a {
         flex-flow: column;
     }
 }
+
+@media only screen and (max-width: 600px) {
+.front{
+       font-size: 14px
+    }
+}
 @media only screen and (max-width: 320px) {
     .col1.hero-text h1{
         font-size: 20px;
@@ -581,6 +587,9 @@ nav ul a {
     }
     .col1.hero-text h2{
         font-size: 15px;
+    }
+    .front{
+       font-size: 12px
     }
     
 }
