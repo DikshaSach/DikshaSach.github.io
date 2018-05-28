@@ -67,9 +67,10 @@ $(document).ready(function () {
     stickyNav();
     navLinkOnClick();
     onMainNavigationClick();
+   
 
 
-
+    
     $(function () {
         var $elements = $('.animateBlock.notAnimated'); //contains all elements of nonAnimated class
         var $window = $(window);
