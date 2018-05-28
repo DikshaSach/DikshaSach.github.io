@@ -3,285 +3,287 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Portfolio page.">
+    <meta name="keywords" content="HTML,CSS, JQuery, JavaScript, Portfolio">
+    <meta name="author" content="Diksha Sach">
     <link rel="stylesheet" href="index.css">
 
     <script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="index.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
     <meta charset="UTF-8">
     <title>Diksha Sach</title>
 </head>
 
 <body>
-    <header class="main_navigation">
+    <main>
+        <header class="main_navigation">
 
-        <div class="row">
-            <a class="logo" href="#">D/S</a>
+            <div class="row">
+                <a class="logo" href="#">D/S</a>
 
-            <div class="mobile-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">ToolKit</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
             </div>
+            <!-- / row -->
 
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">ToolKit</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        </header>
+
+        <div class="hero">
+            <div class="container flex">
+                <div class="hero-text">
+                    <div class="hero-text-center">
+                        <h1>Diksha Sach</h1>
+                        <h2>Full Stack Web Developer</h2>
+                        <div><span class="terminal-arrow">></span><span class="blink">_</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fade"></div>
 
         </div>
-        <!-- / row -->
-
-    </header>
-
-    <div class="hero">
-        <div class="container flex">
-            <div class="hero-text">
-               <div class="hero-text-center">
-                <h1>Diksha Sach</h1>
-                <h2>Full Stack Web Developer</h2>
-                <div><span class="terminal-arrow">></span><span class="blink">_</span></div>
+        <section id="about">
+            <div class="container flex">
+                <div class="col1">
+                    <h1>About</h1>
+                    <div>Hello! My name is Diksha Sach. I'm a Front End Developer based in New York. I've created projects with MongoDB, Express , React/Redux and Node. I am passionate about growing through new experiences and appreciate challenges. Get in touch with me! </div>
+                    <div><a href="#">Resume</a></div>
                 </div>
             </div>
-        </div>
-        <div class="fade"></div>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <article id="project1" class="row">
+                <div class="project-title">FitLife</div>
+                <div class="container flex project-container">
+                    <div class="project-image col1 notAnimated animateBlock left"><img src="fitLife.png" alt="fitlife screenshot">
+                        <div class="projects-bttn">
+                            <a href="https://fitlife.netlify.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/DikshaSach/fitLife-clientEnd" target="_blank"><i class="fas fa-code"></i> Github</a>
+                        </div>
+                    </div>
+                    <div class="description col1 notAnimated animateBlock right">
+                        <div class="description-title">Description:</div>
+                        Track and log your workouts , water-intake and weight to make sure you make the best of today. For a better tomorrow!
+                        <ul class="description-list">
+                            <li>Allows Users to add their workouts for the day.</li>
+                            <li>Allows users to edit workouts</li>
+                            <li>Allows users to delete workouts.</li>
+                            <li>Allows users to see their progress visually with graphs to chart their weight and water intake.
+                            </li>
+                        </ul>
+                        <ul class="languages-used-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>Enyzme</li>
+                            <li>Jest</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Mocha</li>
+                            <li>Chai</li>
+                        </ul>
+                    </div>
+                </div>
 
-    </div>
-    <section id="about">
-        <div class="container flex">
-            <div class="col1">
-                <h1>About</h1>
-                <div>Hello! My name is Diksha Sach. I'm a Front End Developer based in New York. I've created projects with MongoDB, Express , React/Redux and Node. I am passionate about growing through new experiences and appreciate challenges. Get in touch with me! </div>
-                <div><a href="#">Resume</a></div>
+            </article>
+            <div class="divider"><i class="fas  fa-code"></i></div>
+            <article id="project2" class="row">
+                <div class="project-title">HouseTracker</div>
+                <div class="container flex project-container">
+                    <div class="project-image col1 notAnimated animateBlock left"><img src="HouseTracker.png" alt="House Tracker screenshot">
+                        <div class="projects-bttn">
+                            <a href="https://secure-basin-62117.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/DikshaSach/HouseTracker" target="_blank"><i class="fas fa-code"></i> Github</a>
+                        </div>
+                    </div>
+
+                    <div class="description col1 notAnimated animateBlock right">
+                        <div class="description-title">Description:</div>
+                        HouseTracker is a simple app that allows users to keep track of their prospective houses in an organized manner. Users can add/edit and delete properties to their dashboard. Then easily grab a link that they can share with friends and family.
+                        <ul class="description-list">
+                            <li>Allows Users to add houses of their liking</li>
+                            <li>Allows users to edit houses of their liking</li>
+                            <li>Allows users to delete houses of their liking</li>
+                            <li>Allows users to share a link with others of all the houses they are currently tracking.</li>
+                        </ul>
+                        <ul class="languages-used-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Jquery</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Mocha</li>
+                            <li>Chai</li>
+                            <li>Cloudinary</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <div class="divider"><i class="fas fa-code"></i></div>
+
+
+            <article id="project3" class="row">
+                <div class="project-title">FidoFinder</div>
+                <div class="container flex project-container">
+                    <div class="project-image col1 notAnimated animateBlock left"><img src="FidoFinder.png" alt="Fido Finder screenshot">
+                        <div class="projects-bttn">
+                            <a href="https://fidofinder.netlify.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/DikshaSach/Find_Your_Pet" target="_blank"><i class="fas fa-code"></i> Github</a>
+                        </div>
+                    </div>
+                    <div class="description col1 notAnimated animateBlock right">
+                        <div class="description-title">Description:</div>
+                        The creation of this project was sparked by my own interest of finding adoptable pets that were relativly close to my house and to be able to get locations of shelters as well. Using Petfinder API and Google Maps's API to help find adoptable pets in location provided.
+                        <ul class="languages-used-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Jquery</li>
+                            <li>PetFinder API</li>
+                            <li>Google Maps API</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+        <section id="skills">
+            <h1>Toolkit</h1>
+
+            <div class="skills-container">
+                <div class="col-row">
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front color">HTML</div>
+                        </div>
+                    </div>
+
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front">CSS</div>
+                        </div>
+                    </div>
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front color">Javascript</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-row">
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front">Jquery</div>
+                        </div>
+                    </div>
+
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front color">Node</div>
+                        </div>
+                    </div>
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front">Express</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-row">
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front color">React</div>
+
+                        </div>
+                    </div>
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front">Redux</div>
+                        </div>
+                    </div>
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front color">Jest</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-row">
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front">Mocha</div>
+                        </div>
+                    </div>
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front color">Chai</div>
+                        </div>
+                    </div>
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front">Enzyme</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-row">
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front color">Mongoose</div>
+                        </div>
+                    </div>
+                    <div class="holder  col ">
+                        <div class="card">
+                            <div class="front">MongoDB</div>
+                        </div>
+                    </div>
+                    <div class="holder col ">
+                        <div class="card">
+                            <div class="front color">Git</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
-        </div>
-    </section>
-    <section id="projects">
-        <h1>Projects</h1>
-        <article id="project1" class="row">
-            <div class="project-title">FitLife</div>
-            <div class="container flex project-container">
-                <div class="project-image col1 notAnimated animateBlock left"><img src="fitLife.png">
-                    <div class="projects-bttn">
-                        <a href="https://fitlife.netlify.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        <a href="https://github.com/DikshaSach/fitLife-clientEnd" target="_blank"><i class="fas fa-code"></i> Github</a>
-                    </div>
-                </div>
-                <div class="description col1 notAnimated animateBlock right">
-                    <div class="description-title">Description:</div>
-                    Track and log your workouts , water-intake and weight to make sure you make the best of today. For a better tomorrow!
-                    <ul class="description-list">
-                        <li>Allows Users to add their workouts for the day.</li>
-                        <li>Allows users to edit workouts</li>
-                        <li>Allows users to delete workouts.</li>
-                        <li>Allows users to see their progress visually with graphs to chart their weight and water intake.
-                        </li>
-                    </ul>
-                    <ul class="languages-used-list">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>Enyzme</li>
-                        <li>Jest</li>
-                        <li>Node</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>Mocha</li>
-                        <li>Chai</li>
-                    </ul>
-                </div>
+        </section>
+        <footer id="contact" class="footer-links">
+            <div>
+                <a href="https://github.com/DikshaSach" target="_blank"><i class="fab fa-2x fa-github-alt"></i></a>
+                <a href="https://www.linkedin.com/in/dikshasach/" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+                <a class="mailto" href="mailto:sachdiksha@gmail.com" target="_blank"><i class="far fa-2x fa-envelope"></i></a>
+
             </div>
 
-        </article>
-        <div class="divider"><i class="fas  fa-code"></i></div>
-        <article id="project2" class="row">
-            <div class="project-title">HouseTracker</div>
-            <div class="container flex project-container">
-                <div class="project-image col1 notAnimated animateBlock left"><img src="HouseTracker.png">
-                    <div class="projects-bttn">
-                        <a href="https://secure-basin-62117.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        <a href="https://github.com/DikshaSach/HouseTracker" target="_blank"><i class="fas fa-code"></i> Github</a>
-                    </div>
-                </div>
-
-                <div class="description col1 notAnimated animateBlock right">
-                    <div class="description-title">Description:</div>
-                    HouseTracker is a simple app that allows users to keep track of their prospective houses in an organized manner. Users can add/edit and delete properties to their dashboard. Then easily grab a link that they can share with friends and family.
-                    <ul class="description-list">
-                        <li>Allows Users to add houses of their liking</li>
-                        <li>Allows users to edit houses of their liking</li>
-                        <li>Allows users to delete houses of their liking</li>
-                        <li>Allows users to share a link with others of all the houses they are currently tracking.</li>
-                    </ul>
-                    <ul class="languages-used-list">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Jquery</li>
-                        <li>Node</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>Mocha</li>
-                        <li>Chai</li>
-                        <li>Cloudinary</li>
-
-                    </ul>
-                </div>
-            </div>
-
-        </article>
-        <div class="divider"><i class="fas fa-code"></i></div>
-   
-
-        <article id="project3" class="row">
-            <div class="project-title">FidoFinder</div>
-            <div class="container flex project-container">
-                <div class="project-image col1 notAnimated animateBlock left"><img src="FidoFinder.png">
-                    <div class="projects-bttn">
-                        <a href="https://fidofinder.netlify.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        <a href="https://github.com/DikshaSach/Find_Your_Pet" target="_blank"><i class="fas fa-code"></i> Github</a>
-                    </div>
-                </div>
-                <div class="description col1 notAnimated animateBlock right">
-                    <div class="description-title">Description:</div>
-                    The creation of this project was sparked by my own interest of finding adoptable pets that were relativly close to my house and to be able to get locations of shelters as well. Using Petfinder API and Google Maps's API to help find adoptable pets in location provided.
-                    <ul class="languages-used-list">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Jquery</li>
-                        <li>PetFinder API</li>
-                        <li>Google Maps API</li>
-                    </ul>
-                </div>
-            </div>
-
-        </article>
-    </section>
-    <section id="skills">
-        <h1>Toolkit</h1>
-
-        <div class="skills-container">
-            <div class="col-row">
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front color">HTML</div>
-                    </div>
-                </div>
-
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front">CSS</div>
-                    </div>
-                </div>
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front color">Javascript</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-row">
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front">Jquery</div>
-                    </div>
-                </div>
-
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front color">Node</div>
-                    </div>
-                </div>
-               <div class="holder col ">
-                    <div class="card">
-                        <div class="front">Express</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-row">
-               <div class="holder col ">
-                    <div class="card">
-                        <div class="front color">React</div>
-
-                    </div>
-                </div>
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front">Redux</div>
-                    </div>
-                </div>
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front color">Jest</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-row">
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front">Mocha</div>
-                    </div>
-                </div>
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front color">Chai</div>
-                    </div>
-                </div>
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front">Enzyme</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-row">
-                <div class="holder col ">
-                    <div class="card">
-                        <div  class="front color">Mongoose</div>
-                    </div>
-                </div>
-                <div class="holder  col ">
-                    <div class="card">
-                        <div class="front">MongoDB</div>
-                    </div>
-                </div>
-                <div class="holder col ">
-                    <div class="card">
-                        <div class="front color">Git</div>
-                    </div>
-                </div>
-            </div>
+            <div class="copyright-info"> <i class="far fa-copyright"></i> | Diksha Sach</div>
+        </footer>
 
 
-
-
-        </div>
-    </section>
-    <footer id="contact" class="footer-links">
-        <div>
-            <a href="https://github.com/DikshaSach" target="_blank"><i class="fab fa-2x fa-github-alt"></i></a>
-            <a href="https://www.linkedin.com/in/dikshasach/" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
-            <a class="mailto" href="mailto:sachdiksha@gmail.com" target="_blank"><i class="far fa-2x fa-envelope"></i></a>
-
-        </div>
-
-        <div class="copyright-info"> <i class="far fa-copyright"></i> | Diksha Sach</div>
-    </footer>
-
-
-
+    </main>
 </body>
 
 </html>
