@@ -86,7 +86,7 @@ $(document).ready(function () {
     function animateMe(elem) {
         var winTop = $(window).scrollTop(); // calculate distance from top of window
         var winBottom = winTop + $(window).height();
-        var elemTop = $(elem).offset().top - 100; // element distance from top of page
+        var elemTop = $(elem).offset().top; // element distance from top of page
         var elemBottom = elemTop + $(elem).height();
         if ((elemBottom <= winBottom) && (elemTop >= winTop)) {
             // exchange classes if element visible

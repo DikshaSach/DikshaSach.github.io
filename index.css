@@ -329,11 +329,11 @@ margin-left: 5px;
     opacity: 0;
     filter: alpha(opacity=0);
     position: relative;
-    -webkit-transition: all .75s ease-in;
-    -moz-transition: all .75s ease-in;
-    -ms-transition: all .75s ease-in;
-    -o-transition: all .75s ease-in;
-    transition: all .75s ease-in;
+    -webkit-transition: all .55s ease-in;
+    -moz-transition: all .55s ease-in;
+    -ms-transition: all .55s ease-in;
+    -o-transition: all .55s ease-in;
+    transition: all .55s ease-in;
 }
 
 .animateBlock.left {
