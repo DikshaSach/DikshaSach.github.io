@@ -192,6 +192,27 @@ h1 {
 h2 {
     margin: 0;
 }
+.resume a{
+    text-decoration: none; 
+    font-size: 20px;
+    color: black;
+   
+    
+}
+.resume a:hover{
+    color: #3B325F;
+    transform: scale(1.1);
+}
+.resume{
+     border: 2px solid #6855b6;
+     width: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 10px;
+}
+.resume:hover{
+    transform: scale(1.1);
+}
 
 /* end hero */
 
