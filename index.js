@@ -88,7 +88,9 @@ $(document).ready(function () {
         var winBottom = winTop + $(window).height();
         var elemTop = $(elem).offset().top; // element distance from top of page
         var elemBottom = elemTop + $(elem).height();
-        if ((elemBottom <= winBottom) && (elemTop >= winTop)) {
+        console.log(elemTop + ' - ' + winTop + " - " + (elemTop >= winTop))
+
+        if ((elemTop <= (winTop + ($(window).height()/2))) && ($(elem).hasClass('notAnimated'))) {
             // exchange classes if element visible
             $(elem).removeClass('notAnimated').addClass('animated');
         }
